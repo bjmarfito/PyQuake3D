@@ -961,7 +961,7 @@ class Ptool:
                     step = self.steps[iter_indices][ii]
 
                     # Get time
-                    time[ii] = df[df.Iteration==step]['time(s)'].values
+                    time[ii] = df[df.Iteration==step]['time(s)'].values[0]
                     # V_event[ii] == df[df.Iteration==step]['slip_v'].values
                     # read the output file depending on the iteration step
                     
